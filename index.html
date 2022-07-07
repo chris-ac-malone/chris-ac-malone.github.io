@@ -1,15 +1,19 @@
 <html>
     <head></head>
     <body>
-        <div class="header-wrapper">
-            <div class="header-content">
-                <div class="menu-item-wrapper"><a class="menu-item" href="/">Home</a></div>
-                <div class="menu-item-wrapper"><a class="menu-item" href="/portfolio">Portfolio</a></div>
-                <div class="menu-item-wrapper"><a class="menu-item" href="/contact">Contact</a></div>
+        <div style="position: fixed; width: 100%">
+            <div class="header-logo">
+                Chris Malone
+            </div>
+            <div class="header-wrapper">
+                <div class="header-content">
+                    <div class="menu-item-wrapper"><a class="menu-item" href="/">Home</a></div>
+                    <div class="menu-item-wrapper"><a class="menu-item" href="/portfolio">Portfolio</a></div>
+                    <div class="menu-item-wrapper"><a class="menu-item" href="/contact">Contact</a></div>
+                </div>
             </div>
         </div>
         <div style="height: 200vh; background-image: linear-gradient(to top, red, yellow)">
-
         </div>
     </body>
 </html>
@@ -19,7 +23,7 @@
         margin: 0px;
     }
     .header-wrapper {
-        background-image: linear-gradient(to top, rgba(191,191,192,0.5) 1%, white 99%);
+        background-image: linear-gradient(to top, rgba(191,191,192,1) 1%, white 99%);
         padding: 10px ;
         border-bottom: solid 1px #eeeeee;
         display: flex;
@@ -30,7 +34,14 @@
         padding: 10px;
         max-width: 1200px;
         text-align: center;
-        flex: 1
+        flex: 1;
+    }
+    .header-logo {
+        text-align: center;
+        font-size: 48px;
+        background-color: #2D3142;
+        padding: 20px;
+        color: white;
     }
     .menu-item-wrapper {
         width: 32%;
