@@ -1,14 +1,55 @@
 <html>
     <head></head>
     <body>
-        <div class="header">
-            <p>Test</p>
+        <div class="header-wrapper">
+            <div class="header-content">
+                <div class="menu-item-wrapper"><a class="menu-item" href="/">Home</a></div>
+                <div class="menu-item-wrapper"><a class="menu-item" href="/portfolio">Portfolio</a></div>
+                <div class="menu-item-wrapper"><a class="menu-item" href="/contact">Contact</a></div>
+            </div>
+        </div>
+        <div style="height: 200vh; background-image: linear-gradient(to top, red, yellow)">
+
         </div>
     </body>
 </html>
 
 <style>
-    .header {
-        background-color: red;
+    body {
+        margin: 0px;
+    }
+    .header-wrapper {
+        background-image: linear-gradient(to top, rgba(191,191,192,0.5) 1%, white 99%);
+        padding: 10px ;
+        border-bottom: solid 1px #eeeeee;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    }
+    .header-content {
+        padding: 10px;
+        max-width: 1200px;
+        text-align: center;
+        flex: 1
+    }
+    .menu-item-wrapper {
+        width: 32%;
+        display: inline-block;
+    }
+    .menu-item {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    a {
+        text-decoration: none;
+        color: #4F5D75;
+        font-weight: bold;
+        transition: .4s;
+    }
+    a:hover {
+        filter: brightness(120%);
     }
 </style>
