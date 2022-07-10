@@ -1,73 +1,21 @@
 <html>
-    <head></head>
+<head>
+<script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".container").click(function(){
+        $(".container").hide();
+    })
+});
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
     <body>
-        <div style="position: fixed; width: 100%">
-            <div class="header-logo">
-                Chris Malone
-            </div>
-            <div class="header-wrapper">
-                <div class="header-content">
-                    <div class="menu-item-wrapper"><a class="menu-item" href="/">Home</a></div>
-                    <div class="menu-item-wrapper"><a class="menu-item" href="/portfolio">Portfolio</a></div>
-                    <div class="menu-item-wrapper"><a class="menu-item" href="/contact">Contact</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
+        <div class="container">
             <div class="row">
-
+                <div class="col-sm-4">Col One</div>
+                <div class="col-sm-8">Col Two</div>
             </div>
         </div>
     </body>
 </html>
-
-<style>
-    body {
-        margin: 0px;
-    }
-    .header-wrapper {
-        background-image: linear-gradient(to top, rgba(191,191,192,1) 1%, white 99%);
-        padding: 10px ;
-        border-bottom: solid 1px #eeeeee;
-        display: flex;
-        justify-content: center;
-        box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
-    }
-    .header-content {
-        padding: 10px;
-        max-width: 1200px;
-        text-align: center;
-        flex: 1;
-    }
-    .header-logo {
-        text-align: center;
-        font-size: 48px;
-        background-color: #2D3142;
-        padding: 20px;
-        color: white;
-    }
-    .menu-item-wrapper {
-        width: 32%;
-        display: inline-block;
-    }
-    .menu-item {
-        font-size: 20px;
-        display: block;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-    .section {
-        padding: 159px 100px 70px 100px; 
-        background-color: red;
-    }
-    a {
-        text-decoration: none;
-        color: #4F5D75;
-        font-weight: bold;
-        transition: .4s;
-    }
-    a:hover {
-        filter: brightness(120%);
-    }
-</style>
