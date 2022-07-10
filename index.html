@@ -3,19 +3,34 @@
 <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-    $(".container").click(function(){
-        $(".container").hide();
-    })
 });
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 </head>
     <body>
+        <div id="navbar" class="navbar navbar-inverse sticky-top">
+            <a class="active" href="javascript:void(0)">Home</a>
+            <a href="javascript:void(0)">Portfolio</a>
+            <a href="javascript:void(0)">Contact</a>
+        </div>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-4">Col One</div>
-                <div class="col-sm-8">Col Two</div>
-            </div>
+            ASD
         </div>
     </body>
 </html>
+<style>
+    .header {
+        padding: 30px;
+        text-align: center;
+    }
+    .container {
+        background-color: red;
+        height: 200vh
+    }
+    a {
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none !important;
+    }
+</style>
