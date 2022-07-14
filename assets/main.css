@@ -1,0 +1,63 @@
+/* https://coolors.co/a1e8af-94c595-747c92-372772-3a2449 */
+.main {
+    margin: 40vh auto 0;
+    width: fit-content;
+    transition: 2s;
+}
+.header {
+    text-align: center;
+    font-size: 5vw;
+    font-family: "Cohaerentia Regular", sans-serif;
+    color: rgba(255,255,255, 0.8);
+    font-weight: bolder;
+}
+.header-sm {
+    text-align: center;
+    font-size: 4vw;
+    font-family: "Cohaerentia Regular", sans-serif;
+    color: rgba(255,255,255, 0.8);
+    font-weight: bolder;
+}
+.menu-item {
+    font-size: 2vw;
+    font-family: "Cohaerentia Regular", sans-serif;
+    cursor: pointer;
+    transition: .1s;
+    color: rgba(255,255,255, 0.8);
+    padding: 2px;
+}
+.menu-item:hover {
+    background-color: rgba(255,255,255, 0.5);
+    color: #333;
+    border-radius: 2px;;
+}
+body {
+    background: linear-gradient(-45deg, #a1e8af, #94C595, #747C92, #372772, #3A2449);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    overflow: hidden;
+}
+.portfolio-section {
+    color: rgba(255,255,255, 0.8);
+    font-size: 2vw;
+    text-align: center;
+}
+@media screen and (max-width: 800px) {
+    .header {
+        font-size: 9vw;
+    }
+    .header-sm {
+        font-size: 7vw;
+    }
+    .menu-item {
+        font-size: 4vw;
+    }
+}
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+@font-face { font-family: "Creato Display"; font-weight: bold; src: url('fonts/CreatoDisplay-Bold.otf'); }
+@font-face { font-family: "Creato Display"; font-weight: bolder; src: url('fonts/CreatoDisplay-Black.otf'); }
