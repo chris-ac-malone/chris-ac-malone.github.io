@@ -7,23 +7,36 @@
     $(document).ready(function(){
         initializePage();
         $('#portfolio-button').click(showPortfolio)
+        $('#contact-button').click(showContact)
         $('#home-button').click(showHome)
     });
 
     function initializePage() {
         $('.portfolio-section').hide();
+        $('.contact-section').hide();
         $('#home-button').hide();
     }
 
     function showPortfolio() {
         $('.main').css("margin","10vh auto 0");
-        $('.portfolio-section').fadeIn(2000);
+        $('.contact-section').fadeOut(700,function(){
+            $('.portfolio-section').fadeIn(700);
+        })
+        $('#home-button').fadeIn(750);
+    }
+
+    function showContact() {
+        $('.main').css("margin","10vh auto 0");
+        $('.portfolio-section').fadeOut(700, function(){
+            $('.contact-section').fadeIn(700);
+        })
         $('#home-button').fadeIn(750);
     }
 
     function showHome() {
         $('.main').css("margin","40vh auto 0");
         $('.portfolio-section').fadeOut(700);
+        $('.contact-section').fadeOut(700);
         $('#home-button').fadeOut(750);
     }
 </script>
@@ -32,11 +45,14 @@
         <div class="main">
             <span class="header">C</span><span class="header-sm">HRIS</span><span class="header"> M</span><span class="header-sm">ALONE</span>
                 <div>
-                    <span class="menu-item" id="portfolio-button">Portfolio</span><span class="menu-item" style="float:right;">Contact</span>
+                    <span class="menu-item" id="portfolio-button">Portfolio</span><span class="menu-item" id="contact-button" style="float:right;">Contact</span>
                 </div>
         </div>
         <div class="portfolio-section"></br>
-            <p style="width: 50%">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="contact-section"></br>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
         <div id="home-button">
             🡨

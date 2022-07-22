@@ -43,6 +43,11 @@ body {
     font-size: 2vw;
     text-align: center;
 }
+.contact-section {
+    color: rgba(255,255,255, 0.8);
+    font-size: 2vw;
+    text-align: center;
+}
 #home-button {
     color: white;
     font-size: 28px;
