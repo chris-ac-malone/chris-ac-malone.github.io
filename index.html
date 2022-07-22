@@ -5,12 +5,27 @@
 <link rel="stylesheet" href="assets/main.css">
 <script>
     $(document).ready(function(){
-        $('.portfolio-section').hide();
-        $('#portfolio-button').click(function() {
-            $('.main').css("margin","10vh auto 0")
-            $('.portfolio-section').fadeIn(2000);
-        })
+        initializePage();
+        $('#portfolio-button').click(showPortfolio)
+        $('#home-button').click(showHome)
     });
+
+    function initializePage() {
+        $('.portfolio-section').hide();
+        $('#home-button').hide();
+    }
+
+    function showPortfolio() {
+        $('.main').css("margin","10vh auto 0");
+        $('.portfolio-section').fadeIn(2000);
+        $('#home-button').fadeIn(750);
+    }
+
+    function showHome() {
+        $('.main').css("margin","40vh auto 0");
+        $('.portfolio-section').fadeOut(700);
+        $('#home-button').fadeOut(750);
+    }
 </script>
 </head>
     <body>
@@ -20,9 +35,11 @@
                     <span class="menu-item" id="portfolio-button">Portfolio</span><span class="menu-item" style="float:right;">Contact</span>
                 </div>
         </div>
-        <div class="portfolio-section">
-            <p>This is a placeholder for the content that will be the portfolio section</p>
+        <div class="portfolio-section"></br>
+            <p style="width: 50%">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        
+        <div id="home-button">
+            🡨
+        </div>
     </body>
 </html>
