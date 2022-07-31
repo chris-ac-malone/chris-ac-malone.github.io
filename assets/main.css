@@ -68,7 +68,7 @@ body {
 #home-button:hover {
     transform: scale(1)
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .header {
         font-size: 9vw;
     }
@@ -76,7 +76,7 @@ body {
         font-size: 7vw;
     }
     .menu-item {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
 }
 @keyframes gradient {
