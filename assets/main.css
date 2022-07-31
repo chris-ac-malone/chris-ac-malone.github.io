@@ -47,9 +47,37 @@ body {
     color: rgba(255,255,255, 0.8);
     font-size: 2vw;
     text-align: center;
+    margin-top: 7vh;
+}
+.contact-icons {
+    width: 48%;
+    display: inline-block;
+    transition: .5s;
+    transform: scale(0.9);
+    color: rgba(255,255,255, 0.8);
+}
+.contact-icons:hover {
+    transform: scale(1);
+}
+.contact-button {
+    color: rgba(255,255,255, 0.8);
+    font-size: 4vw;
+    border: solid rgba(255,255,255, 0.8) 2px;
+    border-radius: 100px;;
+    padding: 4% 3% 2%;
+}
+.contact-button:hover {
+    color: rgba(255,255,255, 0.8);
+}
+.contact-links {
+    color: rgba(255,255,255,0.8);
+}
+.contact-links:hover {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
 }
 #home-button {
-    color: white;
+    color: rgba(255,255,255, 0.8);
     font-size: 28px;
     position: absolute;
     text-align: center;
@@ -57,9 +85,9 @@ body {
     bottom: 24px;
     width: 50px;
     height: 50px;
-    border: solid 2px white;
+    border: solid 2px rgba(255,255,255, 0.8);
     border-radius: 100px;
-    padding-top: 3px;
+    padding-top: 8px;
     cursor: pointer;
     transform: scale(0.9);
     transition-property: transform;
@@ -77,6 +105,34 @@ body {
     }
     .menu-item {
         font-size: 4.5vw;
+    }
+    .contact-section {
+        color: rgba(255,255,255, 0.8);
+        font-size: 2vw;
+        text-align: center;
+        margin-top: 15vh;
+    }
+    .contact-icons {
+        width: 48%;
+        display: inline-block;
+    }
+    .contact-button {
+        color: rgba(255,255,255, 0.8);
+        font-size: 8vw;
+        border: solid rgba(255,255,255, 0.8) 2px;
+        border-radius: 100px;;
+        padding: 8% 6% 4%;
+    }
+    .contact-button:hover {
+        color: rgba(255,255,255, 0.8);
+    }
+    .contact-links {
+        color: rgba(255,255,255,0.8);
+        font-size: 4vw;
+    }
+    .contact-links:hover {
+        color: rgba(255,255,255,0.8);
+        text-decoration: none;
     }
 }
 @keyframes gradient {
