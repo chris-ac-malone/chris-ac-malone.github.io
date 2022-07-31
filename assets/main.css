@@ -43,6 +43,33 @@ body {
     font-size: 2vw;
     text-align: center;
 }
+#projects-list {
+    display: inline-block;
+    border: inset 2px rgba(255,255,255,0.3);
+    width: 40%;
+    height: 50vh;
+    overflow-y: scroll;
+    padding: 20px 20px 0 20px;
+}
+.project-item {
+    text-align: left;
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 8px 3px 0px 3px;
+    transition: .5s;
+}
+.project-item:hover {
+    background-color: rgba(255,255,255,0.4);
+    color: #333;
+}
+.project-viewer {
+    display: inline-block;
+    border: inset 2px rgba(255,255,255,0.3);
+    width: 50%;
+    height: 50vh;
+    margin-left: 20px;
+    overflow-y: hidden;
+}
 .contact-section {
     color: rgba(255,255,255, 0.8);
     font-size: 2vw;
