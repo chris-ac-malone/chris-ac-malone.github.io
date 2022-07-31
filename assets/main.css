@@ -112,16 +112,12 @@ body {
         text-align: center;
         margin-top: 15vh;
     }
-    .contact-icons {
-        width: 48%;
-        display: inline-block;
-    }
     .contact-button {
         color: rgba(255,255,255, 0.8);
         font-size: 8vw;
         border: solid rgba(255,255,255, 0.8) 2px;
-        border-radius: 100px;;
-        padding: 8% 6% 4%;
+        border-radius: 200px;
+        padding: 6% 4% 1%;
     }
     .contact-button:hover {
         color: rgba(255,255,255, 0.8);
@@ -133,6 +129,20 @@ body {
     .contact-links:hover {
         color: rgba(255,255,255,0.8);
         text-decoration: none;
+    }
+}
+@media screen and (max-width: 800px) {
+    .contact-icons {
+        width: 100%;
+        display: block;
+        margin-bottom: 50px;
+    }
+    .contact-button {
+        color: rgba(255,255,255, 0.8);
+        font-size: 8vw;
+        border: solid rgba(255,255,255, 0.8) 2px;
+        border-radius: 200px;
+        padding: 4% 3% 2%;
     }
 }
 @keyframes gradient {
