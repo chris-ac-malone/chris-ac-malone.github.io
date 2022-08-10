@@ -11,6 +11,10 @@
         $('#portfolio-button').click(showPortfolio)
         $('#contact-button').click(showContact)
         $('#home-button').click(showHome)
+        $('.project-item').click(function() {
+            projectItem = '#'+this.dataset.projectcontent;
+            selectProject(projectItem);
+        })
     });
 
     function initializePage() {
@@ -41,6 +45,14 @@
         $('.contact-section').fadeOut(700);
         $('#home-button').fadeOut(750);
     }
+
+    function selectProject(selectedProject) {
+        $('.project-viewer div').fadeOut(700, function(){
+            console.log("fadeOut Complete");
+            $(selectedProject).fadeIn(700);
+        });
+    }
+
 </script>
 </head>
     <body>
@@ -54,8 +66,8 @@
 
         <div class="portfolio-section"></br>
             <div id="projects-list">
-                <div id="website-button" class="project-item">chris-ac-malone.github.io</div>
-                <div id="plant-schedule-button" class="project-item">PlantSchedule</div>
+                <div id="website-button" class="project-item" data-projectcontent="website-content">chris-ac-malone.github.io</div>
+                <div id="plant-schedule-button" class="project-item" data-projectcontent="plant-schedule-content">PlantSchedule</div>
             </div>
             <div class="project-viewer">
                 <div id="select-project">
