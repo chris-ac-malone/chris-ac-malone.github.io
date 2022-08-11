@@ -11,9 +11,8 @@
         $('#portfolio-button').click(showPortfolio)
         $('#contact-button').click(showContact)
         $('#home-button').click(showHome)
-        $('.project-item').click(function() {
-            projectItem = '#'+this.dataset.projectcontent;
-            selectProject(projectItem);
+        $('.project-item').click(function(){
+            hideAllProjects();
         })
     });
 
@@ -46,11 +45,14 @@
         $('#home-button').fadeOut(750);
     }
 
+    function hideAllProjects() {
+        $('#select-project').fadeOut(700)
+        $('#website-content').fadeOut(700)
+        $('#plant-schedule-content').fadeOut(700);
+    }
+
     function selectProject(selectedProject) {
-        $('.project-viewer div').fadeOut(700, function(){
-            console.log("fadeOut Complete");
-            $(selectedProject).fadeIn(700);
-        });
+        $(selectedProject).fadeIn(700);
     }
 
 </script>
