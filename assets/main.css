@@ -51,6 +51,7 @@ body {
     height: 50vh;
     overflow-y: scroll;
     padding: 20px 20px 0 20px;
+    border-radius: 3px;
 }
 .project-item {
     text-align: left;
@@ -71,6 +72,7 @@ body {
     margin-left: 20px;
     overflow-y: scroll;
     text-align: left;
+    border-radius: 3px;
 }
 .project-viewer div {
     padding: 10px 15px 20px;
