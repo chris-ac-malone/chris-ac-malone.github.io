@@ -56,32 +56,56 @@
 </script>
 </head>
     <body>
-
+        <!-- HOME SECTION SECTION -->
         <div class="main">
-            <span class="header">C</span><span class="header-sm">HRIS</span><span class="header"> M</span><span class="header-sm">ALONE</span>
+            <span class="header">Chris Malone</span>
                 <div>
                     <span class="menu-item" id="portfolio-button">Portfolio</span><span class="menu-item" id="contact-button" style="float:right;">Contact</span>
                 </div>
         </div>
 
+        <!-- PORTFOLIO SECTION -->
         <div class="portfolio-section"></br>
             <div id="projects-list">
                 <div id="website-button" class="project-item" data-projectcontent="website-content">chris-ac-malone.github.io</div>
                 <div id="plant-schedule-button" class="project-item" data-projectcontent="plant-schedule-content">PlantSchedule</div>
+                <div id="writing-circle-button" class="project-item" data-projectcontent="writing-circle-content">Writing Circle</div>
             </div>
             <div class="project-viewer">
                 <div id="select-project">
                     <div style="margin:auto; height: 100%">Please select a project</div>
                 </div>
                 <div id="website-content">
-                    asd
+                    <a class="external-link" target="_blank" href="https://github.com/chris-ac-malone/chris-ac-malone.github.io">chris-ac-malone.github.io on GitHub</a><br>
+                    Created with HTML, CSS, and JS/JQuery. <br>
+                    This project started as a simple portfolio to showcase other projects, but I ended up using it as a platform for trying out some new css and JQuery techniques that I had learned.<br>
+                    I practiced with Bootstrap CSS, but ultimately went with a more custom single page layout.<br>
+                    Todo: Fix an unexpected output from the fadeOut completion function, causing an undesired pop-in effect when switching between tabs.
                 </div>
                 <div id="plant-schedule-content">
-                    asd
+                    <a class="external-link" target="_blank" href="https://github.com/chris-ac-malone/PlantSchedule">PlantSchedule on GitHub</a><br>
+                    A mobile app written in React Native. It currently has a small static list of plants that are rendered in a list, as well as a plant summary screen detailing the plant.<br>
+                    Todo: Basic functionality will include adding plants from the static list to a dynamic user list, which in turn will send push notifications to the user at watering and repotting times.<br>
+                    Potential features may include custom plants, user uploaded images of their plants, and a visual plant progress chart.<br>
+                    Currently an early work in progress, but I plan to start a separate repository in flutter as more developers migrate to it. 
+                </div>
+                <div id="writing-circle-content">
+                    <a class="external-link" target="_blank" href="https://github.com/chris-ac-malone/writing-circle-v2">Writing Circle on GitHub</a><br>
+                    A mobile app written in React Native for my senior project in University.<br>
+                    A somewhat ambitious project where users can share their creative writing and discover other writers' work.<br>
+                    The scope ended up being larger than what I could accomplish at the time, essentially being a social media platform. I was able to implement a working profile system that
+                    allowed users to share their work and view a universal list of stories obtained through a Firebase database. My troubles included:<br>
+                    Realizing I didn't understand Typescript, and then manually changing all of my files to Javascript in order to save time.<br>
+                    Starting the project over because I started with a navigation template that I didn't understand to save time. I ended up starting from scratch, and learning a lot about how 
+                    navigation works.<br>
+                    And finally, accidentally implementing an infinite loop on a database read, which used up my month's quota of database operations in about 2 seconds, forcing me to create a new 
+                    database and carefully fix the loop without the ability to run the code.<br>
+                    Despite these trials and not being able to fully finish the project, I had learned a lot and was praised for my impressive, albeit rather stupid, ambition for the project. 
                 </div>
             </div>
         </div>
 
+        <!-- CONTACT SECTION -->
         <div class="contact-section"></br>
             <div class="contact-icons">
                 <a class="contact-button" href="tel:4252256839"><i class="fa-solid fa-phone"></i></a>
@@ -95,6 +119,7 @@
             </div>
         </div>
 
+        <!-- HOME BUTTON -->
         <div id="home-button">
             <i class="fa-solid fa-arrow-left"></i>
         </div>

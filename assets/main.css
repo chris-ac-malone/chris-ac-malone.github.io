@@ -1,4 +1,15 @@
 /* https://coolors.co/a1e8af-94c595-747c92-372772-3a2449 */
+
+body {
+    background: linear-gradient(-45deg, #a1e8af, #94C595, #747C92, #372772, #3A2449);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    overflow: hidden;
+}
+/************/
+/* HOMEPAGE */
+/************/
 .main {
     margin: 40vh auto 0;
     width: fit-content;
@@ -7,13 +18,7 @@
 .header {
     text-align: center;
     font-size: 5vw;
-    font-family: "Cohaerentia Regular", sans-serif;
-    color: rgba(255,255,255, 0.8);
-    font-weight: bolder;
-}
-.header-sm {
-    text-align: center;
-    font-size: 4vw;
+    font-variant: small-caps;
     font-family: "Cohaerentia Regular", sans-serif;
     color: rgba(255,255,255, 0.8);
     font-weight: bolder;
@@ -31,16 +36,12 @@
     color: #333;
     border-radius: 2px;;
 }
-body {
-    background: linear-gradient(-45deg, #a1e8af, #94C595, #747C92, #372772, #3A2449);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    height: 100vh;
-    overflow: hidden;
-}
+/*********************/
+/* PORTFOLIO SECTION */
+/*********************/
 .portfolio-section {
     color: rgba(255,255,255, 0.8);
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-align: center;
 }
 #projects-list {
@@ -68,8 +69,15 @@ body {
     width: 50%;
     height: 50vh;
     margin-left: 20px;
-    overflow-y: hidden;
+    overflow-y: scroll;
+    text-align: left;
 }
+.project-viewer div {
+    padding: 10px 15px 20px;
+}
+/*******************/
+/* CONTACT SECTION */
+/*******************/
 .contact-section {
     color: rgba(255,255,255, 0.8);
     font-size: 2vw;
@@ -103,6 +111,9 @@ body {
     color: rgba(255,255,255,0.8);
     text-decoration: none;
 }
+/*****************/
+/* MISCELLANEOUS */
+/*****************/
 #home-button {
     color: rgba(255,255,255, 0.8);
     font-size: 28px;
@@ -123,15 +134,20 @@ body {
 #home-button:hover {
     transform: scale(1)
 }
+.external-link::after {
+    font-family: 'Font Awesome\ 5 Free';
+    margin-left: 5px;
+    content: '\f08e';
+    font-weight: 600;
+    font-size: .8em;
+}
 @media screen and (max-width: 1200px) {
     .header {
+        font-variant: small-caps;
         font-size: 9vw;
     }
-    .header-sm {
-        font-size: 7vw;
-    }
     .menu-item {
-        font-size: 4.5vw;
+        font-size: 5.5vw;
     }
     .contact-section {
         color: rgba(255,255,255, 0.8);
@@ -179,16 +195,17 @@ body {
         padding: 20px 20px 0 20px;
         margin: 5px;
         width: auto;
-        font-size: 3.5vw;
+        font-size: 5.5vw;
     }
     .project-viewer {
         display: block;
         border: inset 2px rgba(255,255,255,0.3);
-        height: 40vh;
-        overflow-y: hidden;
+        height: 40vh; 
+        overflow-y: scroll;
         margin: 5px;
         width: auto;
-        font-size: 3.5vw;
+        font-size: 6vw;
+        text-align: left;
     }
 }
 @keyframes gradient {
