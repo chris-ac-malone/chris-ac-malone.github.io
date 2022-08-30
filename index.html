@@ -73,6 +73,7 @@
                 <div id="cooking-conversion-button" class="project-item" data-projectcontent="cooking-conversions-content">Cooking Conversions</div>
                 <div id="cooking-conversion-electron-button" class="project-item" data-projectcontent="cooking-conversions-electron-content">Cooking Conversions: Electron</div>
                 <div id="3d-card-button" class="project-item" data-projectcontent="3d-card-content">3D Card Effect</div>
+                <div id="3d-card-v2-button" class="project-item" data-projectcontent="3d-card-v2-content">3D Card Effect: V2</div>
             </div>
             <div class="project-viewer">
                 <div id="select-project">
@@ -119,6 +120,15 @@
                     <a class="external-link" target="_blank" href="https://codepen.io/Acedoutry/pen/YzaBxov">3D Card on Codepen.io</a><br>
                     A 3D hover effect made in CSS and JS.<br>
                     This version overlays a background image with divs and uses Javascript to rotate and skew the card item, as well as add inset box shadows to give it a lighting effect. 
+                </div>
+                <div id="3d-card-v2-content">
+                    <a class="external-link" target="_blank" href="https://codepen.io/Acedoutry/pen/jOzogXK?editors=1111">3D Card on Codepen.io</a><br>
+                    An updated version of my 3D card effect using CSS and JS. This version uses the mouse location rather than a grid of divs, offering a full range of intervals for the card rotation effect.<br>
+                    A main container stacks 3 items on top of each other: A card wrapper used for pointer collision, a plate for the card image that is rotated, and a plate that overlays a linear gradient for a shine effect.<br>
+                    From this setup, we start a listener to get the mouse coordinates and create two sets of coordinates; one with a centered origin for card rotation, another with a top left origin for a parallaxed shine effect. 
+                    Then we use these coordinates to rotate and skew our card and shine plates, using a perspective modifier to give the rotation depth.<br>
+                    This version also has a Spin Card button that makes the card do 2 spins. It does this by listening fofr a click, which adds an "animate" class. 
+                    After that, the card wrapper element gets a listener for animationend, which removes the animate class.
                 </div>
             </div>
         </div>
